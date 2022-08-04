@@ -57,28 +57,27 @@ async def start_private(client: Client, message: Message):
         photo=f"https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg",
         caption=f"""ʜᴇʟʟᴏ✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
- **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**
- **𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 [BETA 𝙱𝙾𝚃𝚉](t.me/beta_bot_updates)**""",
+ **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⛓ Aᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ Gʀᴏᴜᴘ",
+                        "✚ Add me to your Group",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton(
-                    "• Cᴏᴍᴍᴀɴᴅs", callback_data="cb_cmd"),],
+                    "🔎 How to Use? Commands Menu.", callback_data="cb_cmd"),],
                 [
-                    InlineKeyboardButton("• Oᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
-                    InlineKeyboardButton("• Repo", url=f"https://github.com/BETA-OFFICIAL/BETA-MUSICBOT"),
+                    InlineKeyboardButton("👤 Owner", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("💡 Git Repo", url=f"https://github.com/BETA-OFFICIAL/BETA-MUSICBOT"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "• Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "• Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [

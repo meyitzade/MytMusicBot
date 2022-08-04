@@ -78,11 +78,6 @@ async def start_private(client: Client, message: Message):
                     ),
                     InlineKeyboardButton(
                         "📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "• ASSISTANT •", url=f"t.me/{ASSISTANT_NAME}"
                     )
                 ],
             ]

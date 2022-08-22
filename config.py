@@ -16,6 +16,7 @@ API_HASH = getenv("API_HASH", "")
 OWNER_ID = int(getenv("OWNER_ID", ""))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
 LOG_ID = getenv("LOG_ID", "")
+START_IMG = getenv("START_IMG")
 
 OWNER_NAME = getenv("OWNER_NAME", "JP_Jeol_org")
 ALIVE_NAME = getenv("ALIVE_NAME", "JEOL")

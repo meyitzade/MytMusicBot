@@ -18,6 +18,14 @@
             "description": "Fill it with your TG id",
             "required": true
         },
+        OWNER_ID": {
+            "description": "Fill it with your TG id",
+            "required": true
+        },START_IMG": {
+            "description": "start image url that shown start command",
+            "value": "https://graph.org/file/f0edd62ebbe7bc5b0d630.jpg",
+            "required": true
+        },
         "BOT_TOKEN": {
             "description": "fill with your bot token from @BotFather",
             "required": true

@@ -12,6 +12,7 @@ from config import (
     OWNER_NAME,
     ASSISTANT_NAME,
     UPDATES_CHANNEL,
+    START_IMG,
 )
 from SJM.decorators import sudo_users_only
 from SJM.filters import command
@@ -54,7 +55,7 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
  insert(int(message.chat.id))
  await message.reply_photo(
-        photo=f"https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg",
+        photo=f"{START_IMG}",
         caption=f"""ʜᴇʟʟᴏ✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**""",

@@ -60,30 +60,17 @@ async def start_private(client: Client, message: Message):
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**""",
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "✚ Add me to your Group",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
-                ],
-                [InlineKeyboardButton(
-                    "🔎 How to Use? Commands Menu.", callback_data="cb_cmd"),],
-                [
-                    InlineKeyboardButton("👤 Owner", url=f"https://t.me/{OWNER_NAME}"),
-                    InlineKeyboardButton("💡 Git Repo", url=f"https://github.com/BETA-OFFICIAL/BETA-MUSICBOT"),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📨 Support", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    )
-                ],
-            ]
-        ),
-    )
+            InlineKeyboardButton("🔎 How to Use? Commands Menu."", callback_data="cb_cmd")
+            ],[
+            InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),         
+            InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}")
+            ],[
+            InlineKeyboardButton("✚ Add me to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("👤 Owner ", url=f"https://t.me/{OWNER_NAME"),
+            ]]
+            )
+        )
 
 
 @Client.on_message(

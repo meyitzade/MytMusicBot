@@ -18,7 +18,7 @@
 
 ## Heroku Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BETA-OFFICIAL/BETA-MUSICBOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://herokuweb.vercel.app/)
 
 
 

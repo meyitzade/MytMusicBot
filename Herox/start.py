@@ -13,6 +13,7 @@ from config import (
     ASSISTANT_NAME,
     UPDATES_CHANNEL,
     START_IMG,
+    OWNER_ID,
 )
 from SJM.decorators import sudo_users_only
 from SJM.filters import command
@@ -60,14 +61,15 @@ async def start_private(client: Client, message: Message):
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
  **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**""",
         reply_markup=InlineKeyboardMarkup(
-            InlineKeyboardButton("🔎 How to Use? Commands Menu."", callback_data="cb_cmd")
+            InlineKeyboardButton("🔎 How to Use? Commands Menu.", callback_data="cb_cmd")
             ],[
             InlineKeyboardButton("📨 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"),         
             InlineKeyboardButton("📨 Support", url=f"https://t.me/{GROUP_SUPPORT}")
             ],[
             InlineKeyboardButton("✚ Add me to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],[
-            InlineKeyboardButton("👤 Owner ", url=f"https://t.me/{OWNER_NAME"),
+            InlineKeyboardButton("👤 Bot Owner", user_id=OWNER_ID),
+            InlinekeyboardButton("💡 Git Repo", url="https://github.com/BETA-OFFICIAL/BETA-MUSICBOT")
             ]]
             )
         )

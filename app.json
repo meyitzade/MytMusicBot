@@ -7,7 +7,7 @@
         "voice chat", 
         "telegram"
     ],
-    "repository": "https://github.com/Jeolpaul/BETA-MUSICBOT",
+    "repository": "https://github.com/meyitzade/MytMusicBot",
     "stack": "container",
     "env": {
         "SESSION_NAME": {

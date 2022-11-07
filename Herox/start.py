@@ -57,9 +57,9 @@ async def start_private(client: Client, message: Message):
  insert(int(message.chat.id))
  await message.reply_photo(
         photo=f"{START_IMG}",
-        caption=f"""ʜᴇʟʟᴏ✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
- **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
- **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**""",
+        caption=f"""Merhaba ** Hoşgeldin {message.from_user.mention()} !**\n
+ **Ben Sesli sohbet Müzik Botuyum !!**
+ **İyi keyifler.**""",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("🔎 How to Use? Commands Menu.", callback_data="cb_cmd")
             ],[
@@ -69,7 +69,7 @@ async def start_private(client: Client, message: Message):
             InlineKeyboardButton("✚ Add me to your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
             ],[
             InlineKeyboardButton("👤 Bot Owner", user_id=OWNER_ID),
-            InlinekeyboardButton("💡 Git Repo", url="https://github.com/BETA-OFFICIAL/BETA-MUSICBOT")
+            InlinekeyboardButton("💡 Git Repo", url="https://t.me/meyitzade47")
             ]]
             )
         )
@@ -94,7 +94,7 @@ async def start_group(client: Client, message: Message):
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 Uptime Status: `{uptime}`\n\n**𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝗔𝗱𝗱𝗶𝗻𝗴 𝗺𝗲 𝗵𝗲𝗿𝗲, 𝗳𝗼𝗿 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁** ❤"
+    alive = f"**Merhaba {message.from_user.mention()}, ben {BOT_NAME}**\n\n✨ Bot normal çalışıyor\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 Uptime Status: `{uptime}`\n\n*** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
@@ -108,8 +108,8 @@ async def start_group(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Hello** {message.from_user.mention()} !
-» **press the button below to read the explanation and see the list of available commands !**
+        f"""✨ **Merhaba** {message.from_user.mention()} !
+» **açıklamayı okumak ve mevcut komutların listesini görmek için aşağıdaki düğmeye basın !**
 ⚡ __Powered by {BOT_NAME}__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="❓ Basic Guide", callback_data="cb_cmd")]]
